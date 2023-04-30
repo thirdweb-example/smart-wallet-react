@@ -1,0 +1,23 @@
+{
+  "name": "thirdweb-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "yarn build && npx thirdweb@latest upload dist"
+  },
+  "dependencies": {
+    "@thirdweb-dev/react": "^3.11.1",
+    "@thirdweb-dev/sdk": "^3.10.5",
+    "ethers": "^5.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2",
+    "vite": "^3",
+    "vite-plugin-node-polyfills": "^0.7.0"
+  }
+}
