@@ -118,3 +118,10 @@
 .logo img {
   filter: invert(1);
 }
+
+.nftImage {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
