@@ -12,10 +12,7 @@ import { editionDropAddress, editionDropTokenId } from "../const/yourDetails";
 export default function Home() {
   const address = useAddress();
 
-  const { contract: editionDropContract } = useContract(
-    editionDropAddress,
-    "edition-drop"
-  );
+  const { contract: editionDropContract } = useContract(editionDropAddress);
   const { data: nft, isLoading: isNftLoading } = useNFT(
     editionDropContract,
     editionDropTokenId
