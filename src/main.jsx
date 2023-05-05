@@ -8,7 +8,7 @@ import {
   smartWallet,
 } from "@thirdweb-dev/react";
 import "./styles/globals.css";
-import { TWApiKey, TWFactoryAddress, activeChain } from "../const/yourDetails";
+import { TWFactoryAddress, activeChain } from "../const/yourDetails";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -19,7 +19,7 @@ root.render(
       supportedWallets={[
         smartWallet({
           factoryAddress: TWFactoryAddress,
-          thirdwebApiKey: TWApiKey,
+          thirdwebApiKey: process.env.TW_API_KEY,
           gasless: true,
           personalWallets: [metamaskWallet(), localWallet({ persist: true })],
         }),
