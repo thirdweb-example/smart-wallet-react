@@ -1,37 +1,55 @@
-## Getting Started
+# Using smart wallets in React
 
-Create a project using this example:
+> This repository is associated to a [guide on thirdweb blog](https://blog.thirdweb.com/guides/how-to-use-erc4337-smart-wallets/) demonstrating the use of smart wallets in React creating an invisible web3 experience.
+
+## Getting started
+
+Clone this repository and run the following command in the project directory:
 
 ```bash
-npx thirdweb create --template vite-javascript-starter
+# npm
+npm install
+
+# yarn
+yarn install
 ```
 
-You can start editing the page by modifying `src/main.jsx`. The page auto-updates as you edit the file.
+This should install all the required dependencies for this project.
 
-On `src/index.jsx`, you'll find our `ThirdwebProvider` wrapping your app,
-this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
+## Adding details
 
-### Deploy to IPFS
+Check `const/yourDetails.js` file and add all the details specified. This includes:
 
-Deploy a copy of your application to IPFS using the following command:
+- `TWFactoryAddress`: Address of the deployed thirdweb account factory contract
+- `TWApiKey`: thirdweb API key that you can generate from [thirdweb dashboard](https://thirdweb.com/dashboard/api-keys).
+- `activeChain`: The chain your account factory is deployed on. Recommended to import from the `@thirdweb-dev/chains` package.
+- `editionDropAddress`: Address for your deployed [Edition Drop](https://thirdweb.com/thirdweb.eth/DropERC1155) contract.
+- `editionDropTokenId`: Token ID to claim from the edition drop contract.
+
+## Running the app
+
+Use the following command to run the app:
 
 ```bash
+# npm
+npm run dev
+
+# yarn
+yarn dev
+```
+
+## Deploying to IPFS
+
+Use the following command to deploy this app to IPFS:
+
+```bash
+# npm
+npm run deploy
+
+# yarn
 yarn deploy
 ```
 
-## Learn More
+## Conclusion
 
-To learn more about thirdweb, Vite and React, take a look at the following resources:
-
-- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
-- [thirdweb JavaScript Documentation](https://docs.thirdweb.com/react) - learn about our JavaScript/TypeScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com/react) - check our guides and development resources.
-- [Vite Documentation](https://vitejs.dev/guide/) - learn about Vite features.
-- [React documentation](https://reactjs.org/) - learn React.
-
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+Feel free to contribute to this repository by creating a pull request. If you have any questions, join our [Discord server](https://discord.gg/thirdweb) and create a support thread. For any feedback, leave them on our [feedback board](https://feedback.thirdweb.com).
