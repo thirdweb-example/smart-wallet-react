@@ -1,0 +1,26 @@
+{
+  "name": "vite_demo",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "yarn build && npx thirdweb@latest upload dist"
+  },
+  "dependencies": {
+    "@thirdweb-dev/react": "^3",
+    "@thirdweb-dev/sdk": "^3",
+    "ethers": "^5",
+    "react": "^18.2",
+    "react-dom": "^18.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.5",
+    "@vitejs/plugin-react": "^2",
+    "typescript": "^4.7.2",
+    "vite": "^3",
+    "vite-plugin-node-polyfills": "^0.7.0"
+  }
+}
