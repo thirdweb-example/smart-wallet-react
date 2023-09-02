@@ -1,19 +1,24 @@
-## Getting Started
+## Smart Wallet React Demo
 
-Create a project using this example:
-
-```bash
-npx thirdweb create --template vite-typescript-starter
-```
-
-You can start editing the page by modifying `src/main.tsx`. The page auto-updates as you edit the file.
-
-On `src/index.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
+Simple web app that lets users connect their smart wallets and do gasless, signless transactions.
 
 ## Environment Variables
 
 To run this project, you will need to add environment variables. Check the `.env.example` file for all the environment variables required and add it to `.env.local` file or set them up on your hosting provider.
+
+## Running the project
+
+Install the dependencies
+
+```bash
+yarn install
+```
+
+Run the app
+
+```bash
+yarn dev
+```
 
 ### Deploy to IPFS
 
