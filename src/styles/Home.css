@@ -61,14 +61,25 @@
 }
 
 .button {
+  width: 250px;
   background-color: #84309c;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.4rem;
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   cursor: pointer;
   transition: background-color 0.15s ease;
+}
+
+.input {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
 }
 
 .button:hover {

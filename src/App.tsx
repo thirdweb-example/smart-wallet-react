@@ -3,11 +3,6 @@ import "./styles/Home.css";
 import { NFTComponent } from "./components/nft";
 import { ConnectCompoenent } from "./components/connect";
 
-const wallet = smartWallet({
-  factoryAddress: "0x6B1F8bBF4Af9267C0a483Da53BaE1118eadC50C1",
-  gasless: true,
-});
-
 export default function Home() {
   return (
     <main className="main">

@@ -15,10 +15,7 @@ export const NFTComponent = () => {
     editionDropContract,
     editionDropTokenId
   );
-  const { data: ownedNfts, refetch: refetchOwnedNfts } = useOwnedNFTs(
-    editionDropContract,
-    address
-  );
+  const { data: ownedNfts } = useOwnedNFTs(editionDropContract, address);
 
   return (
     <div className="card" style={{ marginBottom: "20px" }}>
