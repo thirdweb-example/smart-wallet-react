@@ -4,7 +4,7 @@ Simple web app that lets users connect their smart wallets and do gasless, signl
 
 ## Environment Variables
 
-To run this project, you will need to add environment variables. Check the `.env.example` file for all the environment variables required and add it to `.env.local` file or set them up on your hosting provider.
+To run this project, you will need to add environment variables. Check the `.env.example` file for all the environment variables required and add it to `.env` file or set them up on your hosting provider.
 
 ## Running the project
 
