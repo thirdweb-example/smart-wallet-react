@@ -88,7 +88,7 @@
 
 .cardContent {
   width: "100%";
-  marginTop: "10px";
+  margintop: "10px";
 }
 
 .description {
@@ -110,6 +110,14 @@
   justify-content: left;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .card {

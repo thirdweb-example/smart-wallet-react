@@ -1,7 +1,8 @@
 import { ConnectWallet, smartWallet } from "@thirdweb-dev/react";
 import "./styles/Home.css";
 import { NFTComponent } from "./components/nft";
-import { ConnectCompoenent } from "./components/connect";
+import { ConnectUI } from "./components/connect";
+import { AddSigner } from "./components/add-signer";
 
 export default function Home() {
   return (
@@ -46,7 +47,7 @@ export default function Home() {
             UI
           </p>
         </div>
-        <ConnectCompoenent />
+        <ConnectUI />
         <hr className="divider" />
         <p className="description">
           Then use the React SDK to execute transactions.
@@ -54,6 +55,12 @@ export default function Home() {
           No gas cost or signature required!
         </p>
         <NFTComponent />
+        <hr className="divider" />
+        <p className="description">
+          You can also add temporary session keys to your smart wallet
+        </p>
+        <AddSigner />
+        <hr className="divider" />
       </div>
     </main>
   );

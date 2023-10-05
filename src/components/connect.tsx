@@ -1,10 +1,14 @@
 import { Goerli } from "@thirdweb-dev/chains";
-import { useAddress, useConnect } from "@thirdweb-dev/react";
+import {
+  useAddress,
+  useConnect,
+  useCreateSessionKey,
+} from "@thirdweb-dev/react";
 import { LocalWallet } from "@thirdweb-dev/wallets";
 import { activeChain, smartWalletConfig } from "../main";
 import { useState } from "react";
 
-export const ConnectCompoenent = () => {
+export const ConnectUI = () => {
   const connect = useConnect();
   const address = useAddress();
   const [password, setPassword] = useState("");

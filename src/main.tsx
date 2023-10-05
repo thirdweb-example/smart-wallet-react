@@ -4,7 +4,6 @@ import App from "./App";
 import {
   ThirdwebProvider,
   localWallet,
-  paperWallet,
   smartWallet,
 } from "@thirdweb-dev/react";
 import "./styles/globals.css";
@@ -15,10 +14,9 @@ import { Goerli } from "@thirdweb-dev/chains";
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
 export const activeChain = Goerli;
 
-export const smartWalletConfig = smartWallet({
-  factoryAddress: "0x6B1F8bBF4Af9267C0a483Da53BaE1118eadC50C1",
+export const smartWalletConfig = smartWallet(localWallet(), {
+  factoryAddress: "0x5425683F8D635Ad0c80A4a166f8597C7DFA9b30F",
   gasless: true,
-  personalWallets: [localWallet()],
 });
 
 export const editionDropAddress = "0xb9e2b6C6ce60d074b96DD19498dF2493f9A625B1";
