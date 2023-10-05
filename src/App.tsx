@@ -2,6 +2,8 @@ import { ConnectWallet, smartWallet } from "@thirdweb-dev/react";
 import "./styles/Home.css";
 import { NFTComponent } from "./components/nft";
 import { ConnectCompoenent } from "./components/connect";
+import { ConnectWalletComponent } from "./components/connectWallet";
+import { UseConnect } from "./components/useConnect";
 
 export default function Home() {
   return (
@@ -31,29 +33,10 @@ export default function Home() {
             </a>
           </p>
           <hr className="divider" />
-          <p className="description">
-            With <code className="code">{"<ConnectWallet />"}</code> UI
-            component{" "}
-          </p>
-          <div className="connect">
-            <ConnectWallet btnTitle="Connect" />
-          </div>
+          <ConnectWalletComponent />
         </div>
-        <div className="connect">
-          <hr className="divider" />
-          <p className="description">
-            With <code className="code">{"useConnect()"}</code> hook and custom
-            UI
-          </p>
-        </div>
-        <ConnectCompoenent />
+        <UseConnect />
         <hr className="divider" />
-        <p className="description">
-          Then use the React SDK to execute transactions.
-          <br />
-          No gas cost or signature required!
-        </p>
-        <NFTComponent />
       </div>
     </main>
   );
