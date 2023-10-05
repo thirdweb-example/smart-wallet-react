@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@thirdweb-dev/chains": "^0.1.50",
-    "@thirdweb-dev/react": "^3.16.3",
+    "@thirdweb-dev/react": "^3",
     "@thirdweb-dev/sdk": "^3",
     "@thirdweb-dev/wallets": "^1.1.23",
     "ethers": "^5",
