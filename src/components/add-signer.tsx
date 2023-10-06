@@ -1,6 +1,5 @@
 import {
   SignerWithPermissions,
-  SmartWallet,
   useAddress,
   useCreateSessionKey,
   useWallet,
@@ -13,7 +12,7 @@ export const AddSigner = () => {
   const [walletToAdd, setWalletToAdd] = useState("");
   const [admins, setAdmins] = useState<SignerWithPermissions[]>([]);
   const { mutate: createSession, isLoading } = useCreateSessionKey();
-  const smartWallet = useWallet<SmartWallet>();
+  const smartWallet = useWallet("smartWallet");
 
   const fetchSigners = async () => {
     if (!smartWallet) return;
