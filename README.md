@@ -2,9 +2,19 @@
 
 Simple web app that lets users connect their smart wallets and do gasless, signless transactions.
 
+Also demo's adding scoped session keys to the smart wallet.
+
 ## Environment Variables
 
 To run this project, you will need to add environment variables. Check the `.env.example` file for all the environment variables required and add it to `.env` file or set them up on your hosting provider.
+
+The demo requires a thirdweb clientId.
+
+paste your client in your .env file:
+
+```.env
+VITE_TEMPLATE_CLIENT_ID={{your_client_id}}
+```
 
 ## Running the project
 
