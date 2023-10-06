@@ -9,9 +9,9 @@
     "deploy": "yarn build && npx thirdweb@latest upload dist"
   },
   "dependencies": {
-    "@thirdweb-dev/chains": "^0.1.54-nightly-7ebe6cde-20231002232933",
-    "@thirdweb-dev/react": "^3.16.4-nightly-9bd01de5-20231005160835",
-    "@thirdweb-dev/sdk": "^3.10.66-nightly-9bd01de5-20231005160835",
+    "@thirdweb-dev/chains": "^0",
+    "@thirdweb-dev/react": "^3",
+    "@thirdweb-dev/sdk": "^3",
     "ethers": "^5",
     "react": "^18.2",
     "react-dom": "^18.2"

@@ -17,7 +17,7 @@ export const AddSigner = () => {
 
   const fetchSigners = async () => {
     if (!smartWallet) return;
-    const admins = await smartWallet?.getAllActiveSigners();
+    const admins = await smartWallet.getAllActiveSigners();
     setAdmins(admins);
   };
 
