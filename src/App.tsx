@@ -3,6 +3,7 @@ import "./styles/Home.css";
 import { NFTComponent } from "./components/nft";
 import { ConnectUI } from "./components/connect";
 import { AddSigner } from "./components/add-signer";
+import { AddMetamask } from "./components/add-metamask";
 
 export default function Home() {
   return (
@@ -60,6 +61,7 @@ export default function Home() {
           You can also add temporary session keys to your smart wallet
         </p>
         <AddSigner />
+        <AddMetamask />
         <hr className="divider" />
       </div>
     </main>
