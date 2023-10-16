@@ -10,6 +10,7 @@ export const AddMetamask = () => {
 
     const addMetamask = async () => {
         setIsLoading(true);
+        setWalletToAdd("");
 
         const wallet = new MetaMaskWallet({});
 
@@ -24,27 +25,24 @@ export const AddMetamask = () => {
             {
               onSuccess: () => {
                 alert("Metamask added as an admin to smart account");
+                setWalletToAdd(address);
               },
               onError: (e) => {
                 alert((e as any).message);
               },
             });
-
-        setWalletToAdd(address);
     };
 
     return walletToAdd ? (
         <>
-            <h3>Metamask address</h3>
             <p>{walletToAdd} added to smart account</p>
 
         </>
     ) : (
         <>
-            <h3>Metamask address</h3>
             <p>Not connected</p>
             <button className="button" onClick={addMetamask} disabled={isLoading}>
-            {isLoading ? "Connecting..." : "Connect Metamask"}</button>
+            {isLoading ? "Adding as Admin..." : "Connect Metamask"}</button>
         </>
     );
 }; 

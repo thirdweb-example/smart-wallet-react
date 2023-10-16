@@ -15,7 +15,7 @@ import { Goerli } from "@thirdweb-dev/chains";
 export const activeChain = Goerli;
 
 export const smartWalletConfig = smartWallet(localWallet(), {
-  factoryAddress: "0x5425683F8D635Ad0c80A4a166f8597C7DFA9b30F",
+  factoryAddress: "0x8e0ebeb0d60dfc644e145790e1fac9b01c9a82cd",
   gasless: true,
 });
 

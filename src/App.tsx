@@ -61,6 +61,10 @@ export default function Home() {
           You can also add temporary session keys to your smart wallet
         </p>
         <AddSigner />
+        <hr className="divider" />
+        <p className="description">
+          You can also add Metamask with <code className="code">{"addAdmin()"}</code> as another admin to your smart wallet
+          </p>
         <AddMetamask />
         <hr className="divider" />
       </div>
